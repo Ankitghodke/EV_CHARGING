@@ -91,7 +91,7 @@ Power BI (Interactive Executive Dashboard)
 🎯 Conclusion
 This project demonstrates a complete end-to-end analytics workflow converting **156,455 raw EV charging records into strategic business intelligence.
 
-# Key findings confirm:
+ Key findings confirm:
  ⚡ Energy consumption is the primary revenue driver
  🕛 12PM peak hour requires operational prioritization across 200 stations
  📊 Station ST0091 outperforms network average by 10.5% — replicable model
