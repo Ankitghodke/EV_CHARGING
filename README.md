@@ -1,83 +1,99 @@
+ 📌 Project Overview
 
-📌 Project Overview
+A corporate-level analysis of EV charging station operations across 5 Indian cities and 200 stations, analyzing 156,455 charging sessions generating ₹8.14Cr total revenue — focused on revenue optimization, energy consumption trends, demand forecasting, and infrastructure planning.
 
-This project delivers a corporate-level analysis of EV charging station operations, focusing on revenue optimization, energy consumption trends, demand forecasting, and infrastructure planning.
+# Tech Stack:
+- Python — Data Cleaning, Feature Engineering, Correlation Analysis
+- SQL Server (SSMS) — Advanced Business Intelligence Queries
+- Power BI — Executive Dashboard Reporting
 
-The solution integrates:
+ 🏗️ Project Architecture
 
-Python – Data Cleaning, Feature Engineering, Correlation Analysis
-
-SQL – Advanced Business Intelligence Queries
-
-Excel – Validation & Summary Checks
-
-Power BI – Executive Dashboard Reporting
-
-🏗️ Project Architecture
-Raw Dataset (CSV)
+Raw Dataset (156,455 records | 17 features)
         ↓
 Python (EDA + Feature Engineering + Correlation)
         ↓
-SQL (CTEs, LAG, RANK, Aggregations)
+SQL Server (CTEs, LAG, RANK, Aggregations)
         ↓
 Power BI (Interactive Executive Dashboard)
+
+
+ 📊 Dataset Overview
+
+| Metric | Value |
+|--------|-------|
+| Total Sessions | 156,455 |
+| Total Revenue | ₹8.14 Crore |
+| Avg Session Cost | ₹520.35 |
+| Avg Energy Consumed | 32.50 kWh |
+| Avg Session Duration | ~70 minutes |
+| Total Energy Delivered | 5,084,268 kWh |
+| Cities Covered | 5 (Mumbai, Pune, Delhi, Bangalore, Hyderabad) |
+| Charging Stations | 200 |
+| Vehicle Types | 4 (2-Wheeler, 3-Wheeler, 4-Wheeler, Commercial EV) |
+| Weather Conditions | 3 (Sunny, Cloudy, Rainy) |
+| Time Period | 12 Months |
+
+
 🧠 Advanced Analytics Performed
-🔹 Feature Engineering
 
-Extracted Charging Hour
+ 🔹 Feature Engineering
+- Extracted Charging Hour from timestamps → identified peak demand at 12PM (6,666 sessions)
+- Created Month & Season features → revealed 8.8% revenue gap between best (January ₹69.8L) and worst month (February ₹64.1L)
+- Built Revenue Per kWh aggregations → confirmed energy consumption as primary revenue driver
+- Developed Duration Categories → Short (40,143) | Medium (70,153) | Long (46,159)
 
-Created Month & Time Features
+ 🔹 Correlation Analysis
+- Strong Positive: Energy Consumed ↔ Charging Cost — primary revenue driver confirmed
+- Positive: Charging Duration ↔ Energy Consumption
+- Fast vs Slow Charger: ₹522.65 vs ₹518.05 avg cost — only ₹4.60 gap despite same ~70 min duration
 
-Built Revenue Aggregations
+ 🔍 SQL Business Intelligence Queries
 
-Developed Demand Pattern Indicators
+| Query | Technique | Key Finding |
+|-------|-----------|-------------|
+| Month-over-Month Revenue Growth | LAG Window Function | 8.8% seasonal revenue gap |
+| Top Vehicle Types per Month | RANK + PARTITION BY | 2-Wheeler leads at ₹2.04Cr (25.1%) |
+| Station Performance Benchmarking | Subquery + HAVING | ST0091 tops at ₹4.49L vs ₹4.07L avg |
+| Peak Hour Demand Analysis | GROUP BY + ORDER BY | 12PM peak — 6,666 sessions |
+| Energy Consumption by Vehicle | HAVING + Subquery | Commercial EV highest energy consumer |
 
-🔹 Correlation Analysis
 
-Strong Positive: Energy Consumed ↔ Charging Cost
+ 📊 Power BI Dashboard
 
-Positive: Charging Duration ↔ Energy Consumption
+# KPIs Tracked:
+- ✅ Total Sessions — 156K
+- ✅ Total Revenue — ₹8.14Cr
+- ✅ Avg Charging Cost — ₹520
+- ✅ Avg Duration — 70 mins
+- ✅ Avg Energy — 32.50 kWh
 
-Revenue primarily driven by energy usage
-
-🔍 SQL Business Intelligence
-
-Month-over-Month Revenue Growth (LAG)
-
-Top Vehicle Types per Month (RANK)
-
-Station Performance Benchmarking
-
-Peak Hour Demand Analysis
-
-Energy Consumption Insights
-
-📊 Power BI Dashboard Includes
-
-KPI Cards
-
-Revenue Trends
-
-MoM Growth
-
-Vehicle Profitability
-
-Peak Charging Hours
-
-Station Comparison
-
-Interactive Slicers
+# Visuals Included:
+- Revenue by Month (MoM trend)
+- Revenue by Vehicle Type
+- Peak Charging Hours distribution
+- Station Performance Benchmarking
+- City-wise Revenue Breakdown
+- Weather vs Duration Impact matrix
+- Interactive Slicers — City, Vehicle Type, Charger Type, Weather
 
 📈 Business Impact
 
-✔ Infrastructure Expansion Planning
-✔ Peak Demand Optimization
-✔ Revenue Growth Monitoring
-✔ Energy Demand Forecasting
-✔ Dynamic Pricing Strategy Support
+| Finding | Insight | Business Action |
+|---------|---------|-----------------|
+| Peak at 12PM (6,666 sessions) | Highest demand window | Prioritize station availability at noon |
+| ST0091 — 10.5% above avg revenue | Top performing station | Replicate station model across network |
+| February lowest revenue (₹64.1L) | Seasonal demand dip | Launch promotional pricing in Feb |
+| Fast vs Slow — ₹4.60 cost gap | Pricing strategy gap | Re-evaluate fast charger premium pricing |
+| 2-Wheeler leads revenue at 25.1% | Dominant vehicle segment | Prioritize 2-Wheeler infrastructure expansion |
+
 
 🎯 Conclusion
+This project demonstrates a complete end-to-end analytics workflow converting **156,455 raw EV charging records into strategic business intelligence.
 
-This project demonstrates a complete end-to-end analytics workflow that converts operational EV charging data into strategic business insights. By combining Python-based feature engineering and correlation analysis with advanced SQL intelligence and executive dashboarding in Power BI, the solution supports revenue optimization, infrastructure planning, and demand forecasting.
-
-The analysis confirms that energy consumption is the primary revenue driver, peak-hour clustering requires operational attention, and station-level benchmarking enables performance improvement across the charging network.
+# Key findings confirm:
+ ⚡ Energy consumption is the primary revenue driver
+ 🕛 12PM peak hour requires operational prioritization across 200 stations
+ 📊 Station ST0091 outperforms network average by 10.5% — replicable model
+📅 8.8% seasonal revenue gap between January and February signals dynamic pricing opportunity
+ 🚗 2-Wheeler segment dominates at 25.1% of ₹8.14Cr total revenue
