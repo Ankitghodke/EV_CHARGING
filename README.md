@@ -7,6 +7,7 @@ A corporate-level analysis of EV charging station operations across 5 Indian cit
 - SQL Server (SSMS) — Advanced Business Intelligence Queries
 - Power BI — Executive Dashboard Reporting
 
+
  🏗️ Project Architecture
 
 Raw Dataset (156,455 records | 17 features)
@@ -16,6 +17,7 @@ Python (EDA + Feature Engineering + Correlation)
 SQL Server (CTEs, LAG, RANK, Aggregations)
         ↓
 Power BI (Interactive Executive Dashboard)
+
 
 
  📊 Dataset Overview
@@ -33,6 +35,7 @@ Power BI (Interactive Executive Dashboard)
 | Vehicle Types | 4 (2-Wheeler, 3-Wheeler, 4-Wheeler, Commercial EV) |
 | Weather Conditions | 3 (Sunny, Cloudy, Rainy) |
 | Time Period | 12 Months |
+
 
 
 🧠 Advanced Analytics Performed
@@ -61,7 +64,7 @@ Power BI (Interactive Executive Dashboard)
 
  📊 Power BI Dashboard
 
-# KPIs Tracked:
+ KPIs Tracked:
 - ✅ Total Sessions — 156K
 - ✅ Total Revenue — ₹8.14Cr
 - ✅ Avg Charging Cost — ₹520
@@ -77,6 +80,7 @@ Power BI (Interactive Executive Dashboard)
 - Weather vs Duration Impact matrix
 - Interactive Slicers — City, Vehicle Type, Charger Type, Weather
 
+
 📈 Business Impact
 
 | Finding | Insight | Business Action |
@@ -88,8 +92,10 @@ Power BI (Interactive Executive Dashboard)
 | 2-Wheeler leads revenue at 25.1% | Dominant vehicle segment | Prioritize 2-Wheeler infrastructure expansion |
 
 
+
 🎯 Conclusion
 This project demonstrates a complete end-to-end analytics workflow converting **156,455 raw EV charging records into strategic business intelligence.
+
 
  Key findings confirm:
  ⚡ Energy consumption is the primary revenue driver
