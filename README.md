@@ -143,6 +143,4 @@ Key findings confirm:
 
 ![Dashboard](ev_charging_dashboard.PNG)
 
----
 
-*Every metric in this README is verified from actual dataset analysis.*
