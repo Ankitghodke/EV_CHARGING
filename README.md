@@ -141,6 +141,6 @@ Key findings confirm:
 
 ## 📸 Dashboard Preview
 
-![Dashboard](ev_charging_dashboard.PNG)
+![Dashboard](EV_Charging_Station_Analytics_Dashboard.PNG)
 
 
