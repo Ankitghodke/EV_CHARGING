@@ -102,9 +102,9 @@ Visuals included:
 EV-Charging-Station-Analysis/
 ├── ev_charging.ipynb
 ├── ev_charg.sql
-├── ev_charging_analysis_dashboard.pbix
+├── ev_charging_station_analyticss_dashboard.pbix
 ├── EV_Charging_Cleaned.csv
-└── ev_charging_dashboard.PNG
+└── EV_Charging_Station_Analytics_Dashboard.PNG
 ```
 
 ---
